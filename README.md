@@ -1,3 +1,17 @@
+## Como revisar mudanças entre branches
+
+Para garantir rastreabilidade e qualidade, sempre revise as diferenças entre a branch principal (`main`) e a branch de trabalho antes de integrar:
+
+- **Via terminal:**
+	```sh
+	git diff main..nome-da-branch arquivo.extensao
+	```
+- **Via GitHub:**
+	- Abra um Pull Request e utilize a aba "Files changed" para inspecionar todas as alterações.
+- **Via ferramenta gráfica:**
+	- Use o VS Code (Source Control > Compare with Branch) ou outra IDE para visualizar as diferenças de forma visual.
+
+Recomenda-se revisar cada alteração, garantindo que apenas mudanças necessárias e aprovadas sejam integradas à branch principal.
 # Sebo Online
 
 ![Livros](https://images.unsplash.com/photo-1512820790803-83ca734da794)
