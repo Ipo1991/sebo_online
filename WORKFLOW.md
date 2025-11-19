@@ -4,7 +4,7 @@
 
 Adotaremos uma variação do **GitHub Flow**, adaptada para o contexto do Sebo Online, priorizando simplicidade, colaboração e integração contínua.
 
-![GitHub Flow](https://guides.github.com/activities/hello-world/branching.png)
+## GitHub Flow
 
 - **Branch principal:** `main`
 - **Branches de funcionalidades:** criadas a partir de `main` para cada nova feature, correção ou melhoria.
