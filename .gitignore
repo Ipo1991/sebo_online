@@ -1,0 +1,3 @@
+# Ignorar arquivos de downloads e temporários
+/downloads/
+*.tmp
