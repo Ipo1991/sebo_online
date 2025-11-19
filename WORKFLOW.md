@@ -1,3 +1,35 @@
+## Resolução de Conflitos e Reversão de Commits
+
+### Resolução de Conflitos
+
+Quando duas branches alteram a mesma linha de um arquivo, um conflito de merge pode ocorrer. O processo recomendado é:
+
+1. Realizar o merge normalmente (`git merge nome-da-branch`)
+2. O Git irá sinalizar o(s) arquivo(s) em conflito, marcando as regiões conflitantes
+3. Editar o(s) arquivo(s) para manter, descartar ou combinar as alterações, conforme decisão do time
+4. Após resolver, salvar o arquivo, adicionar com `git add nome-do-arquivo` e finalizar com `git commit`
+5. O commit de resolução deve ser elucidativo, explicando como o conflito foi resolvido
+
+**Exemplo de mensagem:**
+```bash
+ui(index): resolve conflito de merge combinando títulos das branches ui/titulo-novo e ui/titulo-destaque
+```
+
+### Reversão de Commit
+
+Se for necessário desfazer um commit já integrado (sem apagar o histórico), utilize:
+
+```bash
+git revert hash-do-commit
+```
+Isso cria um novo commit que desfaz as alterações do commit anterior, mantendo o histórico transparente.
+
+**Exemplo de mensagem:**
+```bash
+revert: desfaz alteração do título principal para restaurar versão anterior
+```
+
+> Sempre documente no Pull Request ou no commit o motivo da reversão.
 # Workflow Oficial – Sebo Online
 
 ## Modelo Adotado
